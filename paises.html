@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destinos por Continente - Viajero</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>Viajero</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="paises.html">Países</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="mapa.html">Mapa</a> <!-- Enlace nuevo -->
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: url('mundo.png'); background-size: cover; background-position: center;">
+    <h2>Explora el mundo por continente</h2>
+    <p>Encuentra inspiración para tu próximo viaje filtrando por región.</p>
+  </section>
+
+  <section class="section">
+    <div class="filter-buttons" style="text-align: center; margin-bottom: 30px;">
+      <button class="filter-btn" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="europa">Europa</button>
+      <button class="filter-btn" data-filter="africa">África</button>
+      <button class="filter-btn" data-filter="america">América</button>
+    </div>
+    
+
+    <div class="countries-grid">
+        <!-- América -->
+        <div class="country-card america">
+          <img src="machupichu.png" alt="Perú - Machu Picchu" />
+          <h4><a href="machupichu.html">Perú</a></h4>
+          <p>Misterio y naturaleza en la ciudadela inca.</p>
+        </div>
+      
+        <!-- África -->
+        <div class="country-card africa">
+          <img src="safari.png" alt="Safari en África" />
+          <h4><a href="safari.html">Tanzania</a></h4>
+          <p>Safari, vida salvaje y paisajes imponentes.</p>
+        </div>
+      
+        <!-- Europa -->
+        <div class="country-card europa">
+          <img src="tren.png" alt="Europa en tren" />
+          <h4><a href="europa.html">Europa</a></h4>
+          <p>Descubre el continente en tren, ciudad por ciudad.</p>
+        </div>
+      </div>
+        <div class="countries-grid">
+            <!-- Europa -->
+            <div class="country-card europa">
+            <img src="italia.png" alt="Italia" />
+            <h4><a href="italia.html">Italia</a></h4>
+            <p>Arte, historia y gastronomía en cada rincón.</p>
+            </div>
+        
+            <!-- Asia -->
+            <div class="country-card asia">
+            <img src="japon.png" alt="Japón" />
+            <h4><a href="japon.html">Japón</a></h4>
+            <p>Tradición y modernidad en un solo lugar.</p>
+            </div>
+        
+            <!-- América -->
+            <div class="country-card america">
+            <img src="brasil.png" alt="Brasil" />
+            <h4><a href="brasil.html">Brasil</a></h4>
+            <p>Ritmos, playas y selvas tropicales.</p>
+            </div>
+            <div class="country-card europa fade-in">...</div>
+
+
+    </section>
+      
+    
+  <footer>
+    <p>&copy; 2025 Viajero - Todos los derechos reservados</p>
+  </footer>
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.country-card');
+  
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+  
+        cards.forEach(card => {
+          if (filter === 'todos') {
+            card.style.display = 'block';
+          } else {
+            if (card.classList.contains(filter)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+  
+    document.querySelectorAll('.fade-in').forEach(element => {
+      observer.observe(element);
+    });
+  </script>
+  
+  
+</body>
+</html>
+<!-- Compare this snippet from styles.css: -->
+/* styles.css */

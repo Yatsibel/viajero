@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Japón - Viajero</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .highlight-section {
+      background-color: #f0f8ff;
+      padding: 50px 40px;
+      border-top: 1px solid #ddd;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #cc0000;
+      color: white;
+      padding: 12px 24px;
+      margin-top: 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #990000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Viajero</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="paises.html">Países</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero" style="background-image: url('japonn.png'); background-size: cover; background-position: center; color: white; text-align: center; padding: 80px 20px;">
+    <h2>Japón</h2>
+    <p>Tradición milenaria, tecnología avanzada y paisajes inolvidables.</p>
+  </div>
+
+  <section class="section">
+    <h3>¿Por qué visitar Japón?</h3>
+    <p>Japón es una fusión única entre lo antiguo y lo moderno. Desde templos tranquilos y cerezos en flor hasta rascacielos y trenes bala, cada rincón del país ofrece una experiencia inolvidable.</p>
+    <div class="gallery">
+      <img src="tokio.png" alt="Tokio - Ciudad futurista">
+      <img src="kioto.png" alt="Kioto - Templo y naturaleza">
+      <img src="osaka.png" alt="Osaka - Vida nocturna y gastronomía">
+      <img src="nara.png" alt="Nara - Ciervos sagrados y templos">
+    </div>
+  </section>
+
+  <section class="highlight-section">
+    <h3>Ciudades imprescindibles</h3>
+    <ul>
+      <li><strong>Tokio:</strong> Capital vibrante con cultura pop, tecnología y templos.</li>
+      <li><strong>Kioto:</strong> Tradición japonesa, geishas y miles de templos.</li>
+      <li><strong>Osaka:</strong> Gastronomía local y entretenimiento.</li>
+      <li><strong>Nara:</strong> Historia antigua y ciervos amigables.</li>
+      <li><strong>Hiroshima:</strong> Paz, memoria histórica y reconstrucción.</li>
+    </ul>
+    <a class="button" href="https://www.japan.travel/es/" target="_blank">Más sobre Japón</a>
+  </section>
+
+  <section class="section">
+    <h3>Tips de viaje</h3>
+    <p>
+      La primavera (marzo-abril) y el otoño (octubre-noviembre) son las mejores épocas para visitar. Usa el Japan Rail Pass para ahorrar en transporte y aprende algunas frases básicas en japonés.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Viajero - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

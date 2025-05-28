@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Francia - Viajero</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .highlight-section {
+      background-color: #f0f8ff;
+      padding: 50px 40px;
+      border-top: 1px solid #ddd;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #002654;
+      color: white;
+      padding: 12px 24px;
+      margin-top: 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #001c3a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Viajero</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="paises.html">Países</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero" style="background-image: url('francia.png'); background-size: cover; background-position: center; color: white; text-align: center; padding: 80px 20px;">
+    <h2>Francia</h2>
+    <p>Romanticismo, arte, historia y una de las cocinas más famosas del mundo.</p>
+  </div>
+
+  <section class="section">
+    <h3>¿Por qué visitar Francia?</h3>
+    <p>Francia es sinónimo de elegancia, cultura y belleza. Desde la Torre Eiffel hasta los viñedos de Burdeos y los castillos del Loira, el país ofrece experiencias inolvidables para todos los sentidos.</p>
+    <div class="gallery">
+      <img src="torre.png" alt="París - Torre Eiffel">
+      <img src="castillo.png" alt="Castillos del Valle del Loira">
+      <img src="lavanda.png" alt="Provenza - Campos de lavanda">
+      <img src="alpes.png" alt="Alpes franceses - Montaña y nieve">
+    </div>
+  </section>
+
+  <section class="highlight-section">
+    <h3>Ciudades imprescindibles</h3>
+    <ul>
+      <li><strong>París:</strong> Torre Eiffel, Louvre, y el encanto de Montmartre.</li>
+      <li><strong>Lyon:</strong> Gastronomía reconocida y casco histórico declarado Patrimonio.</li>
+      <li><strong>Burdeos:</strong> Capital del vino y arquitectura refinada.</li>
+      <li><strong>Nice:</strong> Belleza costera en la Riviera Francesa.</li>
+      <li><strong>Estrasburgo:</strong> Encanto europeo y mezcla de culturas.</li>
+    </ul>
+    <a class="button" href="https://www.france.fr/es" target="_blank">Más sobre Francia</a>
+  </section>
+
+  <section class="section">
+    <h3>Tips de viaje</h3>
+    <p>
+      Primavera y otoño son perfectos para evitar multitudes. Prueba los quesos y vinos locales, y lleva calzado cómodo para explorar las ciudades a pie.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Viajero - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

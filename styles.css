@@ -1,0 +1,346 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Estilos del header */
+  header {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #0066cc;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #0066cc;
+  }
+  /* Estilo para la cuadrícula del blog */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Estilos para cada artículo del blog */
+.blog-post {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-post h4 {
+  font-size: 1.3em;
+  margin: 15px 15px 10px;
+  color: #0066cc;
+}
+
+.blog-post p {
+  padding: 0 15px;
+  font-size: 0.95em;
+  color: #555;
+  flex-grow: 1;
+}
+
+.blog-post a {
+  display: block;
+  margin: 15px;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+/* Formulario de contacto */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #004999;
+}
+
+  
+  /* Estilos del hero */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('https://source.unsplash.com/1600x600/?travel,landscape') no-repeat center/cover;
+    color: white;
+  }
+  
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  /* Sección de destinos populares */
+  .section {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0066cc;
+  }
+  
+  /* Diseño de la cuadrícula de destinos */
+  .countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .country-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .country-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .country-card h4 {
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #eee;
+    font-size: 0.9em;
+  }
+ /* Hero especial para artículo */
+.hero-post {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.hero-post .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.hero-post h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-post p {
+  font-size: 1.2em;
+}
+
+/* Estilo extendido del post */
+.full-post {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  line-height: 1.8;
+}
+
+.full-post h3 {
+  color: #0066cc;
+  margin-top: 30px;
+}
+
+.full-post blockquote {
+  background: #e6f0ff;
+  border-left: 5px solid #0066cc;
+  padding: 15px 20px;
+  font-style: italic;
+  color: #003366;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+/* Comentarios */
+.comment-section {
+  margin-top: 60px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.comment-section h3 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.comment-section p {
+  margin-bottom: 20px;
+}
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #004999;
+}
+
+.country-card a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.country-card a:hover {
+  text-decoration: underline;
+}
+/* Animación suave al aparecer */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Contenedor del mapa */
+#map {
+  height: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background-color: #e6f0ff;
+  margin-top: 20px;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  font-family: 'Montserrat', sans-serif; /* Asegura misma fuente */
+}
+
+/* Animación suave al aparecer */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Popup de Leaflet */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-size: 0.95em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-content a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.leaflet-popup-content a:hover {
+  text-decoration: underline;
+}
+
+/* Controles de zoom */
+.leaflet-control-zoom {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

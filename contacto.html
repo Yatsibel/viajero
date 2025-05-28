@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Viajero</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Viajero</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="paises.html">Países</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="mapa.html">Mapa</a> <!-- 👈 Enlace nuevo -->
+    </nav>
+  </header>
+
+  <div class="hero" style="background-image: url('mundo.png'); background-size: cover; background-position: center; color: white; text-align: center; padding: 60px 20px;">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o quieres planear tu próxima aventura? ¡Escríbenos!</p>
+  </div>
+
+  <section class="section">
+    <h3>Envíanos un mensaje</h3>
+    <form class="contact-form" action="#" method="post">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Viajero - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
